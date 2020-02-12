@@ -1,0 +1,21 @@
+﻿1. We need to add new functionality to the CentralUnit.cs file that makes a new sensor of type below, taking an ID and Location
+	a. Door
+	b. Window
+	c. Motion
+	d. Fire
+
+2. If given an invalid type, it should return ArgumentException
+
+3. What things in this file have code smells?
+
+4. What can you do, in this file, to "leave it better than when you worked in it?"
+	* faciliator, list those things, note them all, then have the class stack rank them from low risk -> high risk
+
+5. Look at parseRadioBroadcast, what does it do?
+
+6. What tests do you need to write to insure that ParseRadioBroadcast works?
+
+7. Can you extact the "sensorTestStatusMap" into it's own diagnostics class?
+	a. What tests would you need, if any, to verify that you don't break anything?
+	b. Are there other things that might belong in this new diagnostics class that don't belong in the CentralUnit?
+
